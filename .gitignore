@@ -1,41 +1,66 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
+# === Node.js ===
+node_modules
+.pnpm
+.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
+# === Next.js ===
+.next/
+out/
+.vercel/
 
-# next.js
-/.next/
-/out/
+# === Production build ===
+build/
 
-# production
-/build
+# === Testing ===
+coverage/
 
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
+# === TypeScript ===
 *.tsbuildinfo
 next-env.d.ts
+
+# === Env ===
+.env*
+!.env.example
+
+# === Logs ===
+*.log
+*.log.*
+
+# === macOS ===
+.DS_Store
+
+# === Temporary files ===
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# === Archives / 大文件 ===
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# === AI assets / prompt-generated ===
+/public/ai-assets
+/public/uploads
+
+# === VSCODE / Editor ===
+.vscode/
+.idea/
+
+# === Storybook / Preview builds ===
+.storybook-static/
+
+# === Optional ===
+*.bak
+*.old
+Thumbs.db
