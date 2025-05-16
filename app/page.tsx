@@ -1,59 +1,73 @@
-"use client";
+import FengshuiClient from "@/components/client/FengshuiClient";
+import HeroSection from "@/components/landing/HeroSection";
+import HowItWorksSection from "@/components/landing/HowItWorks";
+import UseCaseSection from "@/components/landing/UseCaseSection";
+import WhyAIFengshuiSection from "@/components/landing/WhyAIFengshuiSection";
+import FaqSection from "@/components/landing/FaqSection";
+import LandingNavbar from "@/components/landing/LandingNavbar";
 
-import Image from "next/image";
-import { useState } from "react";
-import { Button, Switch } from "@heroui/react";
-import { useTheme } from "next-themes";
+// app/page.tsx or app/head.tsx
+export const metadata = {
+  title: 'Free AI Feng Shui Generator | aifengshui.app',
+  description:
+    'Upload your floor plan or room layout to get a free feng shui generator powered by AI. Discover energy flow, five-element balance, and personalized improvement suggestions instantly.',
+  keywords: [
+    'AI Feng Shui',
+    'feng shui floor plan',
+    'feng shui analysis',
+    'feng shui tool',
+    'feng shui online',
+    'bagua map analysis',
+    'chi energy layout',
+    'room layout feng shui',
+    'apartment feng shui',
+    'free feng shui report',
+    'AI home analysis',
+  ],
+  alternates: {
+    canonical: 'https://www.aifengshui.app/',
+  },
+  openGraph: {
+    title: 'Free AI Feng Shui Generator | aifengshui.app',
+    description:
+      'Get instant feng shui insights by uploading your room or floor plan image. AI-powered suggestions for layout, energy flow, and five-element harmony.',
+    url: 'https://www.aifengshui.app/',
+    siteName: 'AI Feng Shui',
+    images: [
+      {
+        url: 'https://www.aifengshui.app/images/og-image.jpg', // 你需要提供一个 1200x630 的社交分享图
+        width: 1200,
+        height: 630,
+        alt: 'AI Feng Shui Generator Screenshot',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free AI Feng Shui Generator',
+    description:
+      'Use AI to analyze your home’s layout and receive feng shui insights in seconds. No feng shui master needed.',
+    images: ['https://www.aifengshui.app/images/og-image.jpg'],
+  },
+};
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
-  const [checked, setChecked] = useState(theme === "dark");
-
-  const toggleTheme = () => {
-    const next = theme === "light" ? "dark" : "light";
-    setTheme(next);
-    setChecked(next === "dark");
-  };
-
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-
-        {/* ✅ HeroUI 测试组件 */}
-        <div className="flex flex-col sm:flex-row gap-6 items-center">
-          <Button color="primary">测试按钮</Button>
-          <Switch
-            isSelected={checked}
-            onValueChange={toggleTheme}
-            color="secondary"
-            size="lg"
-          >
-            切换主题
-          </Switch>
-        </div>
-
-        {/* 你原来的内容可以保留 */}
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-      </main>
-    </div>
+    <main className="flex flex-col max-w-screen-lg mx-auto px-6 gap-10">
+      <LandingNavbar />
+      <HeroSection />
+      <section className="flex flex-col gap-4 scroll-mt-24" id="fengshui-analysis">
+        <h2 className="text-3xl md:text-4xl font-bold">
+          Get Your <span className="text-primary">Feng Shui</span> Report
+        </h2>
+        <FengshuiClient />
+      </section>
+      <HowItWorksSection />
+      <UseCaseSection />
+      <WhyAIFengshuiSection />
+      <FaqSection />
+    </main>
   );
 }

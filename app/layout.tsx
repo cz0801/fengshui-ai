@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import MyNavbar from "@/components/MyNavbar";
+import localFont from "next/font/local";
+import Footer from "@/components/Footer";
+// 定义 Merriweather 字体
+const Merriweather = localFont({
+  src: [
+    {
+      path: './fonts/Merriweather-Regular.ttf',
+      style: 'normal',
+    },
+  ],
+
+  variable: '--font-merriweather',
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,8 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className={`${Merriweather.variable} antialiased`}>
+        <ThemeProvider>
+          <MyNavbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
