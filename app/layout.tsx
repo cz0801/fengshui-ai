@@ -4,6 +4,11 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import MyNavbar from "@/components/MyNavbar";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
+import { GoogleAnalytics } from '@next/third-parties/google';
+
+// 获取 Google Analytics ID
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || '';
+
 // 定义 Merriweather 字体
 const Merriweather = localFont({
   src: [
@@ -35,6 +40,7 @@ export default function RootLayout({
           <Footer />
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId={GA_ID}/>
     </html>
   );
 }

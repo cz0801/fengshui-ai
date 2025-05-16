@@ -25,7 +25,7 @@ export default function BlogCard({ title, slug, date, coverImage, excerpt }: Blo
         </div>
 
         <div className="p-4 space-y-2">
-          <h2 className="text-xl font-semibold leading-snug">
+          <h2 className="text-xl font-semibold leading-snug line-clamp-3">
             {title}
           </h2>
           <p className="text-sm text-default-400">{date}</p>

@@ -54,6 +54,13 @@ export default function BlogPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <BlogCard
+          title="The Ultimate Guide to Feng Shui Bedroom Layout | 14 Principles for a Healthy and Harmonious Space"
+          slug="fengshui-bedroom"
+          date="May 16, 2025"
+          coverImage="/blog/fengshui-bedroom-shape-comparison.png"
+          excerpt="Discover 14 essential Feng Shui bedroom layout tips to improve your sleep, energy, and well-being. Learn what to avoid and how to harmonize your space at aifengshui.app."
+        />
+        <BlogCard
           title="What is Feng Shui? Meaning, Principles, and Modern Value"
           slug="what-is-fengshui"
           date="May 15, 2025"
