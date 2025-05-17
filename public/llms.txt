@@ -1,0 +1,18 @@
+# aifengshui.app
+
+> aifengshui.app is an AI-powered platform that helps users analyze their home or room layout using Feng Shui principles. By uploading a floor plan, users can get personalized suggestions based on Five Element theory, Qi flow, and classical Feng Shui logic.
+
+Combining ancient metaphysics with modern machine intelligence, this tool enables anyone to perform Feng Shui evaluations without hiring a consultant.
+
+## Core Offerings
+- [AI Feng Shui Generator](https://www.aifengshui.app): Upload your floor or room layout to receive instant, free Feng Shui analysis powered by AI.
+- [Blog: AI Feng Shui Tools](https://www.aifengshui.app/blog/ai-fengshui-tools): Introduces available features, tools, and how the AI makes Feng Shui evaluations.
+- [Feng Shui Bedroom Guide](https://www.aifengshui.app/blog/fengshui-bedroom): A comprehensive guide featuring 14 essential layout principles for a healthy and prosperous bedroom. Illustrated with real 3D images.
+
+## Key Resources
+- [What Is Feng Shui?](https://www.aifengshui.app/blog/what-is-fengshui): Educational article explaining the fundamentals of Feng Shui, the Five Elements, and directional energy.
+- [About](https://www.aifengshui.app/about): Platform introduction, service scope, and vision.
+
+## Recent Updates
+- [Feng Shui Bedroom Guide](https://www.aifengshui.app/blog/fengshui-bedroom): Updated May 2025 — includes visual examples and layout comparisons.
+- [What Is Feng Shui?](https://www.aifengshui.app/blog/what-is-fengshui): Updated May 2025 — covers classical theory with AI explanation support.

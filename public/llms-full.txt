@@ -1,0 +1,37 @@
+# About aifengshui.app
+
+> aifengshui.app is an AI-powered Feng Shui platform that allows users to upload their room or floor plan to receive instant analysis based on classical Feng Shui principles. Designed for home owners, designers, and spiritual wellness seekers, the tool provides easy-to-understand suggestions on Qi flow, elemental balance, and layout improvements.
+
+## Website Background
+
+aifengshui.app was created to bridge traditional metaphysical wisdom with modern artificial intelligence. While classical Feng Shui requires years of training, this platform aims to democratize access by using AI to simulate expert-level analysis in seconds.
+
+Our vision is to help more people benefit from Feng Shui regardless of their cultural background or geographic location. The platform uses natural language processing, image recognition, and Five Element theory to generate insights and personalized recommendations.
+
+## Content Categories
+
+### [AI Feng Shui Generator](https://www.aifengshui.app)
+This is the core feature of the site. Users can upload an image of their home layout—such as a hand-drawn sketch or digital blueprint—and the AI will analyze it based on energy flow, entry placement, and elemental distribution. Suggestions include how to reposition the bed, where to enhance wealth corners, or how to balance fire and water elements. Results are displayed instantly and are beginner-friendly.
+
+### [Feng Shui Blog & Guides](https://www.aifengshui.app/blog/ai-fengshui-tools)
+Our blog explains key Feng Shui concepts through illustrated, example-based articles. Topics include bedroom Feng Shui, kitchen layout mistakes, and how to use Bagua maps. All articles are written in plain English, enhanced with AI-generated visuals and practical advice, helping users not only understand but apply Feng Shui in real life.
+
+## User Value
+
+aifengshui.app helps users transform confusing metaphysical ideas into practical actions. Whether you're seeking better sleep, financial stability, or spiritual peace, our tools show you where and how to adjust your living space. You don’t need to hire a consultant—our AI acts as your virtual Feng Shui master.
+
+Benefits include:
+- Saving money on traditional consultations
+- Understanding your home’s energy flow visually
+- Making layout improvements that align with classical principles
+- Gaining clarity through personalized, AI-generated reports
+
+The platform is ideal for new homeowners, renters, interior designers, and anyone curious about applying Feng Shui to their space.
+
+## Recent Updates
+
+### [The Ultimate Feng Shui Bedroom Guide](https://www.aifengshui.app/blog/fengshui-bedroom)
+This article outlines 14 core layout principles for a Feng Shui-friendly bedroom, including illustrated dos and don’ts. It includes real-life examples and 3D visuals. Updated in May 2025, it's one of the most comprehensive and accessible bedroom guides online.
+
+### [What is Feng Shui?](https://www.aifengshui.app/blog/what-is-fengshui)
+This educational guide introduces the fundamentals of Feng Shui, from Qi energy and the Five Elements to directional balance and home layout applications. It is designed for beginners and updated with AI explanations and visuals in May 2025.
