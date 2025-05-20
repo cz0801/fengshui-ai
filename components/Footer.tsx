@@ -1,8 +1,8 @@
 // components/landing/Footer.tsx
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-default-200 bg-background text-default-600 py-8 px-6 text-sm">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between gap-6">
+    <footer className="max-w-screen-lg mx-auto w-full border-t border-default-200 bg-background text-default-600 py-8 px-6 text-sm">
+      <div className="w-full flex flex-col md:flex-row justify-between gap-6">
         {/* 左侧版权信息 */}
         <div>
           <p className="font-medium text-default-800">AI Feng Shui</p>

@@ -5,6 +5,7 @@ import {
   Radio,
   Input,
   Textarea,
+  Card,
 } from '@heroui/react';
 
 export type FloorPlanInfo = {
@@ -28,7 +29,7 @@ export default function FloorPlanInfoForm({
   };
 
   return (
-    <div className="w-full space-y-6">
+    <Card className="w-full p-6 space-y-6">
       <h3 className="text-lg font-semibold">Floor Plan Information</h3>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -92,6 +93,6 @@ export default function FloorPlanInfoForm({
           onChange={(e) => handleChange('notes', e.target.value)}
         />
       </div>
-    </div>
+    </Card>
   );
 }

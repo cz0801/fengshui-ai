@@ -1,0 +1,121 @@
+[
+  {
+    "id": "bed_under_window",
+    "title": "Avoid placing the bed under or too close to a window",
+    "short": "Beds near windows are exposed to unstable energy and lack solid backing.",
+    "reason": "Windows are channels for airflow, light, and external noise. Placing a bed directly beneath or too close to a window removes the protective support of a solid wall, which can make the sleeper feel unsafe and exposed. Incoming wind, bright lights, or street noise can directly impact rest, leading to anxiety, disturbed sleep, and long-term health issues. In Feng Shui, this is considered an unfavorable configuration as it allows external energy to rush toward the sleeping area and prevents the accumulation of nourishing energy.",
+    "solution": "Avoid placing the bed under or directly in front of a window. If the layout cannot be changed, install thick blackout curtains to block incoming energy and light. Reinforce the sense of stability with a solid headboard or by repositioning the bed to a wall-aligned spot."
+  },
+  {
+    "id": "bedroom_door_conflicts",
+    "title": "Avoid door-to-door and doorway alignment in the bedroom",
+    "short": "Bedroom doors aligned with other doors can lead to energy clashes, noise, and lack of privacy.",
+    "reason": "When the bedroom door directly faces other doors—such as the main entrance, bathroom, kitchen, or another bedroom—it creates disruptive energy flow and undermines the tranquility of the bedroom. A door aligned with the main entrance invites chaotic and noisy energy, disturbing privacy and restful sleep. Facing a bathroom door introduces damp, impure air that can negatively impact health. Facing a kitchen door brings fiery, agitated energy, increasing tension and irritability. Doors between two bedrooms can foster interpersonal conflict and disharmony among family members.",
+    "solution": "Avoid placing the bedroom door directly opposite other doors. If this cannot be avoided, use a curtain, bead string, or symbolic Feng Shui remedy to diffuse the energy. Keep doors closed when not in use to minimize the energetic impact."
+  },
+  {
+    "id": "mirror_faces_bed",
+    "title": "Avoid mirrors facing the bed",
+    "short": "Mirrors facing the bed reflect energy and disturb rest.",
+    "reason": "In Feng Shui, mirrors are considered to have yin energy and the ability to reflect both light and energy (qi). When a mirror directly faces the bed, especially during nighttime when yang energy is weak, it can cause energy disturbances, scatter the body's vital qi, and amplify negative influences. It may also startle sleepers by reflecting their own image during semi-conscious moments, leading to anxiety or poor sleep. Over time, this setup is believed to harm personal fortune, emotional stability, and health.",
+    "solution": "Mirrors in the bedroom—such as those on dressing tables or wardrobes—should not directly face the bed. If layout constraints make relocation impossible, use a curtain to cover the mirror at night or angle it away from the bed. A modern solution is to install mirrors inside wardrobe doors, which can be closed after use to avoid reflection while sleeping."
+  },
+  {
+    "id": "plants_too_close",
+    "title": "Avoid inappropriate placement of plants in the bedroom",
+    "short": "Improper plant choices or excessive quantity can disrupt energy flow and emotional balance.",
+    "reason": "While small green plants can enhance vitality in a bedroom, careful selection and moderation are essential. Wilted or dying plants symbolize decay and should be removed immediately. Strongly scented flowers—such as lilies or night-blooming jasmine—can interfere with sleep and carry unfavorable meanings. Spiky or thorny plants like cacti or roses are associated with sharp, aggressive energy and can generate tension. Feng Shui recommends avoiding these in the bedroom. Only a few small, healthy plants should be used, proportionate to the room’s size. Avoid blocking pathways with oversized pots, and never place fake or dried flowers, as they carry stagnant energy and can negatively affect relationships and personal fortune.",
+    "solution": "Place only one or two small, healthy plants in the bedroom, ideally varieties like snake plant, peace lily, or ivy. Avoid overly fragrant, thorny, dead, or artificial plants. Keep them away from the bed and ensure they don’t obstruct natural flow or create visual clutter."
+  },
+  {
+    "id": "inappropriate_lighting",
+    "title": "Ensure proper lighting design in the bedroom",
+    "short": "Harsh or misplaced lighting can create discomfort and disturb rest.",
+    "reason": "Bedroom lighting should promote relaxation and sleep. Warm-toned lights, such as soft yellow, are ideal for creating a cozy atmosphere. The main ceiling light should be simple and not overly bright or glaring. Avoid installing large chandeliers or heavy fixtures directly above the bed, as they can create a sense of oppression similar to a beam overhead, affecting health and emotional harmony. Spotlights above the headboard should also be avoided to prevent overstimulation of the nervous system. Natural lighting should be adjustable—use thick curtains to block strong morning sunlight and allow light in during the day to promote freshness and energetic balance. The ability to control brightness according to activity or time of day is key to maintaining a harmonious sleep environment.",
+    "solution": "Use warm, soft lighting and avoid harsh or direct light over the bed. Install bedside lamps for convenience and comfort. Avoid placing large hanging fixtures above the bed. Use blackout curtains to manage sunlight and ensure lighting flexibility between day and night."
+  },
+  {
+    "id": "electronics_near_bed",
+    "title": "Limit electronics in the bedroom",
+    "short": "Electronic devices generate disruptive energy and weaken restfulness.",
+    "reason": "Electronic devices such as TVs, computers, and smartphones emit electromagnetic fields and noise that disturb the peaceful energy of a bedroom. This can interfere with relaxation and sleep quality. High-powered electronics should not be placed near the bed. Televisions, in particular, should be unplugged and covered when not in use to prevent their reflective screens from acting like mirrors and projecting unwanted energy. Using phones or tablets with blue light before sleep overstimulates the brain and impairs sleep. Large equipment like treadmills represents active energy and clashes with the restful nature of a bedroom. These should be placed in other areas of the home.",
+    "solution": "Minimize the presence of electronics in the bedroom. Avoid placing TVs or computers near the bed. Unplug and cover screens when not in use. Enable airplane mode or turn off phones before sleep, and place them away from the head. Keep alarm clocks and essential devices on distant surfaces. Relocate fitness equipment to more active areas of the home."
+  },
+  {
+    "id": "clutter_in_bedroom",
+    "title": "Avoid clutter and maintain cleanliness in the bedroom",
+    "short": "Excess clutter blocks energy flow and harms both well-being and luck.",
+    "reason": "A bedroom should be a space for rest, not storage. Accumulated clutter—especially under the bed or on top of nightstands—harbors dust, traps stagnant energy, and disrupts the natural flow of qi. Excessive items beneath the bed are believed to negatively impact fortune, relationships, and mental clarity. Work-related materials and piles of books add tension and distract from relaxation. An overcrowded, dusty environment weakens the calming energy needed for restful sleep and emotional balance.",
+    "solution": "Regularly declutter and clean the bedroom. Keep the area under the bed and surfaces clear. Store unnecessary items in closets or storage rooms. Minimize books, papers, and work items in the bedroom. Ensure good air circulation and cleanliness to support health, focus, and a positive atmosphere."
+  },
+  {
+    "id": "door_faces_stairs_or_hall_end",
+    "title": "Avoid bedroom door facing stairs or hallway end",
+    "short": "Doors facing staircases or hallway ends attract fast-moving negative energy.",
+    "reason": "When a bedroom door faces a staircase or is aligned with the end of a long hallway, it creates a direct path for rushing energy (sha qi) to enter the room. This intense and uncontrolled flow can disturb the stability of the bedroom’s atmosphere, leading to weakened fortune, unrest, or even health issues. Such alignment is considered highly inauspicious in Feng Shui.",
+    "solution": "If repositioning the door is not possible, use a beaded curtain or other symbolic partition to break the direct energy path and soften the incoming flow. Keeping the door closed when not in use also helps reduce its negative impact."
+  },
+  {
+    "id": "too_many_mirrors",
+    "title": "Limit the number and shape of mirrors in the bedroom",
+    "short": "Too many mirrors can disturb energy and create visual tension.",
+    "reason": "Having more than one or two mirrors in a bedroom can create chaotic energy and amplify disturbances. In Feng Shui, mirrors reflect and multiply qi, which can disrupt rest and emotional balance. Preferred mirror shapes are round or oval, symbolizing harmony and completeness. Avoid sharp-edged or overly large mirrors.",
+    "solution": "Keep mirror count to a maximum of two. Use round or oval mirrors when possible, and avoid placing mirrors in positions that reflect the bed or create cluttered visual lines."
+  },
+  {
+    "id": "clock_above_bed",
+    "title": "Avoid placing clocks directly above or facing the bed",
+    "short": "Clocks in these positions can cause anxiety or sleep disturbance.",
+    "reason": "Placing a clock above the bed or directly facing the sleeper creates subconscious pressure and unease. If one wakes during the night and sees the time instantly, it may lead to stress, restlessness, or disrupted sleep patterns.",
+    "solution": "Place clocks on a side table or wall away from direct view of the bed. Avoid mounting any clock directly above the bed."
+  },
+  {
+    "id": "shelf_above_bed",
+    "title": "Avoid placing shelves or storage units above the bed",
+    "short": "Overhead shelves create pressure and potential safety hazards.",
+    "reason": "Shelves or bookcases mounted above the bed can create a sense of oppression and insecurity while sleeping. There is also a physical risk of objects falling, which increases subconscious stress and disrupts restful sleep.",
+    "solution": "Keep the wall space above the bed clear. Store items on shelves located on other walls or away from the sleeping area."
+  },
+  {
+    "id": "bed_can_see_door",
+    "title": "Bed should be positioned to see the door and window",
+    "short": "Seeing the entrance while in bed provides safety and peace of mind.",
+    "reason": "Being able to see the door and window from bed aligns with the 'command position' in Feng Shui, giving the sleeper a sense of control and emotional security.",
+    "solution": "Position the bed so that the sleeper has a clear view of the room’s door and window without being directly in line with them."
+  },
+  {
+    "id": "bed_between_door_window",
+    "title": "Avoid placing the bed directly between the door and window",
+    "short": "Beds placed on the line between a door and a window are exposed to unstable energy flow.",
+    "reason": "This alignment causes qi to pass over the bed too quickly, disturbing sleep and potentially causing physical or mental unease.",
+    "solution": "Reposition the bed out of the direct path between the door and window. Choose a more sheltered, quieter area."
+  },
+  {
+    "id": "bed_facing_door",
+    "title": "Avoid placing the bed directly in line with the door",
+    "short": "Beds facing the door are exposed to fast-moving energy, reducing privacy and rest.",
+    "reason": "Doors channel strong qi directly into the room. When the bed is in direct alignment with the door, it leads to disturbed sleep, a lack of privacy, and vulnerability. This is considered highly inauspicious in Feng Shui.",
+    "solution": "Reposition the bed out of direct alignment with the door. Use a curtain, screen, or room divider to block direct flow if moving the bed is not possible."
+  },
+  {
+    "id": "bed_head_against_wall",
+    "title": "Bed headboard should be against a solid wall",
+    "short": "A solid wall behind the bed provides support and stability.",
+    "reason": "Beds placed with the headboard against a solid wall offer psychological and energetic support. If the bed's head is against a window or nothing at all, it can create insecurity and disrupt sleep. Walls shared with bathrooms or kitchens are also problematic due to conflicting energies.",
+    "solution": "Place the bed headboard firmly against a solid wall. Avoid windows or shared walls with bathrooms or kitchens. If unavoidable, use a sturdy headboard and add visual or structural separation."
+  },
+  {
+    "id": "bed_direction_magnetic_field",
+    "title": "Align the bed with the Earth's magnetic field",
+    "short": "Sleeping north-south aligns with natural magnetic flow and improves rest.",
+    "reason": "Feng Shui and modern studies both suggest that aligning the bed's headboard toward the south or north improves sleep quality by harmonizing with the Earth’s magnetic field. East-west orientations may disrupt circulation and lead to unrest.",
+    "solution": "Orient the head of the bed toward the north or south. Avoid placing the headboard toward the east or west when possible."
+  },
+  {
+    "id": "no_overhead_pressure",
+    "title": "Avoid beams or heavy objects directly above the bed",
+    "short": "Overhead weight creates psychological pressure and health risks.",
+    "reason": "Exposed beams, cabinets, or chandeliers above the bed cause subconscious tension and are considered oppressive in Feng Shui. They can lead to headaches, stress, and interrupted sleep.",
+    "solution": "Avoid placing the bed directly beneath beams or heavy fixtures. Use ceiling covers or reposition the bed to avoid oppressive overhead structures."
+  }
+]

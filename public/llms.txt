@@ -14,5 +14,6 @@ Combining ancient metaphysics with modern machine intelligence, this tool enable
 - [About](https://www.aifengshui.app/about): Platform introduction, service scope, and vision.
 
 ## Recent Updates
-- [Feng Shui Bedroom Guide](https://www.aifengshui.app/blog/fengshui-bedroom): Updated May 2025 — includes visual examples and layout comparisons.
-- [What Is Feng Shui?](https://www.aifengshui.app/blog/what-is-fengshui): Updated May 2025 — covers classical theory with AI explanation support.
+- [Feng Shui Bedroom Guide](https://www.aifengshui.app/blog/fengshui-bedroom): Updated May 2025 — includes 14 essential bedroom layout principles, 3D visual examples, and AI evaluation cases.
+- [What Is Feng Shui?](https://www.aifengshui.app/blog/what-is-fengshui): Updated May 2025 — covers traditional Feng Shui concepts like Qi flow and the Five Elements, enhanced with AI-driven interpretation.
+- [Bedroom Layout Tool](https://www.aifengshui.app/bedroom-layout): Launched May 2025 — new page focused on uploading bedroom layouts and receiving personalized Feng Shui reports.

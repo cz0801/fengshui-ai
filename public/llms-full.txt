@@ -35,3 +35,5 @@ This article outlines 14 core layout principles for a Feng Shui-friendly bedroom
 
 ### [What is Feng Shui?](https://www.aifengshui.app/blog/what-is-fengshui)
 This educational guide introduces the fundamentals of Feng Shui, from Qi energy and the Five Elements to directional balance and home layout applications. It is designed for beginners and updated with AI explanations and visuals in May 2025.
+
+- [Bedroom Layout Tool](https://www.aifengshui.app/bedroom-layout): Launched May 2025 — new page focused on uploading bedroom layouts and receiving personalized Feng Shui reports.

@@ -1,18 +1,24 @@
 // app/api/fengshui-analysis/room-layout/route.ts
 import { createOpenAI } from '@ai-sdk/openai';
 import { generateText } from 'ai';
-import fengshuiRoomLayoutPrompt from '@/prompts/fengshuiRoomLayoutPrompt';
+import bedroomFengshuiAnalysisPrompt from '@/prompts/bedroomFengshuiAnalysisPrompt';
+import bedroomRules from '@/prompts/bedroomRules.json';
 
-function buildPrompt(info: {
-  notes: string;
-}) {
+function buildPrompt(info: { notes: string }) {
   const parts: string[] = [];
 
   if (info.notes?.trim()) {
     parts.push(`The user added this note: "${info.notes}".`);
   }
 
-  return parts.join(' ');
+  const rulesText = bedroomRules.map(
+    (r) =>
+      `- ${r.title}\n  Summary: ${r.short}\n  Why it matters: ${r.reason}\n  Tip: ${r.solution}`
+  ).join('\n\n');
+
+  parts.push(`Here are the Feng Shui principles for reference:\n\n${rulesText}`);
+
+  return parts.join('\n\n');
 }
 
 
@@ -30,10 +36,9 @@ export async function POST(req: Request) {
   // console.log('userPrompt', userPrompt);
 
   const result = await generateText({
-    model: openai('gpt-4o'),
-    system: fengshuiRoomLayoutPrompt,
-    maxSteps: 20,
-    maxTokens: 2000,
+    model: openai('gpt-4o-all'),
+    system: bedroomFengshuiAnalysisPrompt,
+    maxSteps: 5,
     messages: [
       {
         role: 'user',

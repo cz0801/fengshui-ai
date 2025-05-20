@@ -5,6 +5,7 @@ import UseCaseSection from "@/components/landing/UseCaseSection";
 import WhyAIFengshuiSection from "@/components/landing/WhyAIFengshuiSection";
 import FaqSection from "@/components/landing/FaqSection";
 import LandingNavbar from "@/components/landing/LandingNavbar";
+import HomeSwitchFeature from "@/components/landing/HomeSwitchFeature";
 
 // app/page.tsx or app/head.tsx
 export const metadata = {
@@ -58,6 +59,7 @@ export default function Home() {
     <main className="flex flex-col max-w-screen-lg mx-auto px-6 gap-10">
       <LandingNavbar />
       <HeroSection />
+      <HomeSwitchFeature />
       <section className="flex flex-col gap-4 scroll-mt-24" id="fengshui-analysis">
         <h2 className="text-3xl md:text-4xl font-bold">
           Get Your <span className="text-primary">Feng Shui</span> Report

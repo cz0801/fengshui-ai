@@ -7,6 +7,8 @@ Disallow: /static/
 Disallow: /404
 Disallow: /500
 Disallow: /*.json$
+Disallow: /*.ttf$
+Disallow: /*.ico$
 
 User-Agent: GPTBot
 Allow: /llms.txt

@@ -8,6 +8,7 @@ export default async function sitemap() {
   // 你的网站所有静态页面路径
   const staticRoutes = [
     '/',
+    '/bedroom-layout',
     '/about',
     '/privacy-policy',
     '/terms-of-service',

@@ -1,71 +1,34 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import UploadImageGroup from "./UploadImageGroup";
-import StartAnalysisButton from "./StartAnalysisButton";
-import AnalysisResult from "./AnalysisResult";
+import UploadImageGroup from "@/components/client/UploadImageGroup";
+import StartAnalysisButton from "@/components/client/StartAnalysisButton";
+import AnalysisResult from "@/components/client/AnalysisResult";
 import { Button } from "@heroui/react";
-import FloorPlanInfoForm, { FloorPlanInfo } from "./FloorPlanInfoForm";
+import { convertFilesToBase64 } from "@/utils/convertFilesToBase64";
+import { setUsedToday, hasUsedToday } from "@/utils/fengshuiUsage";
+import BedroomLayoutInfoForm from "./BedroomLayoutInfoForm";
+import { BedroomLayoutInfo } from "./BedroomLayoutInfoForm";
 
-// ✅ 将文件转换为 base64
-const convertFilesToBase64 = async (files: File[]): Promise<string[]> => {
-  const base64Files = await Promise.all(
-    files.map(
-      (file) =>
-        new Promise<string>((resolve, reject) => {
-          const reader = new FileReader();
-          reader.onload = () => resolve(reader.result as string);
-          reader.onerror = reject;
-          reader.readAsDataURL(file);
-        })
-    )
-  );
-  return base64Files;
-};
-
-// ✅ 判断是否今天已经使用过
-function hasUsedToday(): boolean {
-  const lastUsed = localStorage.getItem('fengshui_used_at');
-  if (!lastUsed) return false;
-
-  const lastDate = new Date(lastUsed);
-  const today = new Date();
-
-  return (
-    lastDate.getFullYear() === today.getFullYear() &&
-    lastDate.getMonth() === today.getMonth() &&
-    lastDate.getDate() === today.getDate()
-  );
-}
-
-// ✅ 设置今天使用过
-function setUsedToday() {
-  localStorage.setItem('fengshui_used_at', new Date().toISOString());
-}
-
-export default function FengshuiClient() {
+export default function BedroomLayoutClient() {
   const [selectedImages, setSelectedImages] = useState<File[]>([]);
   const [result, setResult] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const [extraInfo, setExtraInfo] = useState<FloorPlanInfo>({
-    mode: "floorplan",
-    northUp: "yes",
-    type: "apartment",
-    totalFloors: 0,
-    currentFloor: 0,
-    notes: "",
+  const [extraInfo, setExtraInfo] = useState<BedroomLayoutInfo>({
+    mode: 'room',
+    notes: '',
   });
 
   // 👉 ref 用于滚动定位按钮
   const buttonRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const cachedResult = sessionStorage.getItem('fengshui_result');
-    const cachedInfo = sessionStorage.getItem('fengshui_extra_info');
-    const cachedImages = sessionStorage.getItem('fengshui_images');
+    const cachedResult = sessionStorage.getItem('fengshui_bedroom_layout_result');
+    const cachedInfo = sessionStorage.getItem('fengshui_bedroom_layout_extra_info');
+    const cachedImages = sessionStorage.getItem('fengshui_bedroom_layout_image');
   
     if (cachedResult) {
       setResult(cachedResult);
@@ -128,17 +91,10 @@ export default function FengshuiClient() {
     try {
       const base64Images = await convertFilesToBase64(selectedImages);
   
-      // ✅ 判断请求模式
-      const isFloorPlan = extraInfo.mode === 'floorplan';
-  
-      const endpoint = isFloorPlan
-        ? '/api/fengshui-analysis/floor-plan'
-        : '/api/fengshui-analysis/room-layout';
+      const endpoint = '/api/fengshui-analysis/room-layout';
   
       // ✅ 保留 images 字段结构不变
-      const payload = isFloorPlan
-        ? { images: base64Images, info: extraInfo }
-        : { images: base64Images, info: { notes: extraInfo.notes } };
+      const payload = { images: base64Images, info: { notes: extraInfo.notes } };
   
       const response = await fetch(endpoint, {
         method: "POST",
@@ -155,9 +111,9 @@ export default function FengshuiClient() {
       setUsedToday();
   
       // ✅ 缓存
-      sessionStorage.setItem('fengshui_result', data.result);
-      sessionStorage.setItem('fengshui_extra_info', JSON.stringify(extraInfo));
-      sessionStorage.setItem('fengshui_images', JSON.stringify(base64Images));
+      sessionStorage.setItem('fengshui_bedroom_layout_result', data.result);
+      sessionStorage.setItem('fengshui_bedroom_layout_extra_info', JSON.stringify(extraInfo));
+      sessionStorage.setItem('fengshui_bedroom_layout_extra_image', JSON.stringify(base64Images));
     } catch (err: unknown) {
       console.error("Analysis error:", err);
       setError(err instanceof Error ? err.message : "An unexpected error occurred.");
@@ -169,17 +125,19 @@ export default function FengshuiClient() {
   return (
     <div className="w-full text-start flex flex-col gap-4">
       <UploadImageGroup 
+        max={1}
         value={selectedImages} 
-        onChange={setSelectedImages}
+        onChange={setSelectedImages} 
         description={
-          <>
-          You may upload up to <strong>three floor plan images</strong>.<br />
-          If they are from <strong>different floors</strong>, please 
-          <strong> mark the floor number clearly</strong> on each image.
-          </>
-        } 
+          <div className="text-sm text-gray-500 leading-relaxed space-y-1">
+            <p>Please upload <strong>one clearly drawn bedroom layout image</strong>.</p>
+            <p>Make sure to follow the <strong>North-up (top), South-down (bottom)</strong> orientation.</p>
+            <p>Include clear drawings of the <strong>bed, door, window, and other furniture</strong>.</p>
+            <p>It&apos;s strongly recommended to <strong>label items with text</strong> and <strong>include measurements</strong> if possible.</p>
+          </div>
+        }
       />
-      <FloorPlanInfoForm value={extraInfo} onChange={setExtraInfo} />
+      <BedroomLayoutInfoForm value={extraInfo} onChange={setExtraInfo} />
 
       {/* Start Analysis Button */}
       <div ref={buttonRef}>

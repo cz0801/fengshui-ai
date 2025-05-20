@@ -10,6 +10,7 @@ export default function UploadImageGroup({
   max = 3,
   value,
   onChange,
+  description,
 }: {
   /** 最多上传几张 */
   max?: number;
@@ -17,6 +18,8 @@ export default function UploadImageGroup({
   value: File[];
   /** 更新文件列表 */
   onChange: (files: File[]) => void;
+  /** 上传说明 JSX 内容 */
+  description?: React.ReactNode;
 }) {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
@@ -59,7 +62,7 @@ export default function UploadImageGroup({
   return (
     <div className="flex flex-col items-center w-full">
       {/* 选择按钮 */}
-      <div className="w-full flex items-start flex-col gap-2">
+      <div className="w-full flex items-start flex-col gap-4">
         <input
           ref={inputRef}
           type="file"
@@ -76,11 +79,10 @@ export default function UploadImageGroup({
         >
           Choose Image
         </Button>
-        <p className='text-sm text-gray-500'>
-          You may upload up to <strong>three floor plan images</strong>.<br />
-          If they are from <strong>different floors</strong>, please 
-          <strong> mark the floor number clearly</strong> on each image.
-        </p>
+        {/* 上传说明：支持自定义内容 */}
+        {description && (
+          <div className="text-sm text-gray-500">{description}</div>
+        )}
       </div>
 
       {/* 预览网格 */}
