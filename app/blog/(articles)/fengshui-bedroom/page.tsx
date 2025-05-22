@@ -1,69 +1,34 @@
 import BlogImage from "../../components/BlogImage";
 import BlogSidebar from "../../components/BlogSidebar";
 import Script from 'next/script';
+import { generateMetadata } from '@/utils/metadata';
+import { generateArticleJsonLd } from '@/utils/jsonId';
 
-const TITLE = 'The Ultimate Guide to Feng Shui Bedroom Layout 14 Principles for a Healthy and Harmonious Space';
-const DESCRIPTION = 'Discover 14 essential Feng Shui bedroom layout tips to improve your sleep, energy, and well-being. Learn what to avoid and how to harmonize your space at aifengshui.app.';
+const TITLE = '14 Feng Shui Tips for a Harmonious Bedroom Layout';  
+const DESCRIPTION = 'Discover 14 principles of Feng Shui for optimal bedroom layout. Enhance sleep, balance energy, and create a harmonious space for well-being.';
+const IMAGE_URL = 'https://www.aifengshui.app/blog/fengshui-bedroom-shape-comparison.png';
 
-export const metadata = {
+export const metadata = generateMetadata({
   title: TITLE,
   description: DESCRIPTION,
-  alternates: {
-    canonical: 'https://www.aifengshui.app/blog/fengshui-bedroom',
+  canonical: 'https://www.aifengshui.app/blog/fengshui-bedroom',
+  image: {
+    url: IMAGE_URL, 
+    width: 1200,
+    height: 630,
+    alt: 'Guide to Fengshui Bedroom Layout',
   },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: 'https://www.aifengshui.app/blog/fengshui-bedroom',
-    siteName: 'AI Feng Shui',
-    images: [
-      {
-        url: 'https://www.aifengshui.app/images/og-image.jpg', // 你可以根据需要自定义图片
-        width: 1200,
-        height: 630,
-        alt: 'AI Feng Shui Tools Overview',
-      },
-    ],
-    locale: 'en_US',
-    type: 'article',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: TITLE,
-    description: DESCRIPTION,
-    images: ['https://www.aifengshui.app/images/og-image.jpg'],
-  },
-};
+});
 export default function FengshuiBedroomPage() {
 
-    const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
+    const jsonLd = generateArticleJsonLd({
     headline: TITLE,
     description: DESCRIPTION,
-    image: "https://www.aifengshui.app/blog/fengshui-bedroom-shape-comparison.png",
-    author:{
-      "@type": "Organization",
-      name: "aifengshui.app",
-      url: "https://www.aifengshui.app",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "aifengshui.app",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.aifengshui.app/images/logo.png",
-        width: 270,
-        height: 120,
-      },
-    },
+    image: IMAGE_URL,
     datePublished: "2025-05-10T08:00:00+08:00",
     dateModified: "2025-05-10T08:00:00+08:00",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://www.aifengshui.app/blog/fengshui-bedroom",
-    },
-  };
+    mainEntityId: "https://www.aifengshui.app/blog/fengshui-bedroom",
+  });
 
   return (
     <>

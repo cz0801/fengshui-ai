@@ -1,13 +1,12 @@
 // app/privacy-policy/page.tsx（Next.js App Router 示例）
+import { generateMetadata } from "@/utils/metadata";
 
-export const metadata = {
+export const metadata = generateMetadata({
   title: 'Privacy Policy | AI Feng Shui',
   description:
-    'Read the privacy policy of aifengshui.app to understand how we collect, use, and protect your personal information. We respect your privacy and take data protection seriously.',
-  alternates: {
+    'Learn how we handle your personal data at aifengshui.app. We value your privacy and respect your choices.',
     canonical: 'https://www.aifengshui.app/privacy-policy',
-  },
-};
+});
 
 export default function PrivacyPolicy() {
   return (

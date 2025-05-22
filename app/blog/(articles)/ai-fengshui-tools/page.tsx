@@ -3,70 +3,35 @@
 import BlogSidebar from '../../components/BlogSidebar';
 import BlogImage from '../../components/BlogImage';
 import Script from 'next/script';
+import { generateMetadata } from '@/utils/metadata';
+import { generateArticleJsonLd } from '@/utils/jsonId';
 
 const TITLE = 'Can AI Really Help with Feng Shui? | AI Feng Shui Guide';
-const DESCRIPTION = 'Explore how AI tools like ChatGPT can analyze Bazi, interpret floor plans, and offer modern Feng Shui advice. Learn the benefits and limitations of AI-powered Feng Shui assistants.';
+const DESCRIPTION = 'Discover how AI tools enhance Feng Shui practices, offering personalized insights and analysis for your space. Explore more at aiFengShui.app.';
+const IMAGE_URL = 'https://www.aifengshui.app/blog/AI-understand-fengshui.png';
 
-export const metadata = {
+export const metadata = generateMetadata({
   title: TITLE,
   description: DESCRIPTION,
-  alternates: {
-    canonical: 'https://www.aifengshui.app/blog/ai-fengshui-tools',
+  canonical: 'https://www.aifengshui.app/blog/ai-fengshui-tools',
+  image: {
+    url: IMAGE_URL, 
+    width: 1200,
+    height: 630,
+    alt: 'AI Feng Shui Tools Overview',
   },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: 'https://www.aifengshui.app/blog/ai-fengshui-tools',
-    siteName: 'AI Feng Shui',
-    images: [
-      {
-        url: 'https://www.aifengshui.app/images/og-image.jpg', // 你可以根据需要自定义图片
-        width: 1200,
-        height: 630,
-        alt: 'AI Feng Shui Tools Overview',
-      },
-    ],
-    locale: 'en_US',
-    type: 'article',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: TITLE,
-    description: DESCRIPTION,
-    images: ['https://www.aifengshui.app/images/og-image.jpg'],
-  },
-};
+});
 
 export default function AIFengshuiToolsPage() {
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
+  const jsonLd = generateArticleJsonLd({
     headline: TITLE,
     description: DESCRIPTION,
-    image: "https://www.aifengshui.app/blog/AI-understand-fengshui.png",
-    author:{
-      "@type": "Organization",
-      name: "aifengshui.app",
-      url: "https://www.aifengshui.app",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "aifengshui.app",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.aifengshui.app/images/logo.png",
-        width: 270,
-        height: 120,
-      },
-    },
+    image: IMAGE_URL,
     datePublished: "2025-05-10T08:00:00+08:00",
     dateModified: "2025-05-10T08:00:00+08:00",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://www.aifengshui.app/blog/ai-fengshui-tools",
-    },
-  };
+    mainEntityId: 'https://www.aifengshui.app/blog/ai-fengshui-tools',
+  });
 
   return (
     <>

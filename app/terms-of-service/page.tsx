@@ -1,13 +1,12 @@
 // app/terms-of-service/page.tsx
+import { generateMetadata } from "@/utils/metadata";
 
-export const metadata = {
+export const metadata = generateMetadata({
   title: 'Terms of Service | AI Feng Shui',
   description:
     'Please read the terms and conditions of using aifengshui.app. Learn about usage rules, disclaimers, and your responsibilities as a user.',
-  alternates: {
-    canonical: 'https://www.aifengshui.app/terms-of-service',
-  },
-};
+  canonical: 'https://www.aifengshui.app/terms-of-service',
+});
 
 export default function TermsOfService() {
   return (

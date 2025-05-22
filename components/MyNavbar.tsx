@@ -48,6 +48,12 @@ export default function MyNavbar() {
           >
             Layout
           </Link>
+          <Link 
+            href="/bedroom-layout" 
+            className="text-sm hover:text-primary-500 transition-colors"
+          >
+            Bedroom
+          </Link>
           <Link
             href="/about"
             className="text-sm hover:text-primary-500 transition-colors"
@@ -59,6 +65,12 @@ export default function MyNavbar() {
             className="text-sm hover:text-primary-500 transition-colors"
           >
             Blog
+          </Link>
+          <Link
+            href="/fengshui-request" 
+            className="text-sm hover:text-primary-500 transition-colors"
+          >
+            Improve Our AI
           </Link>
         </NavbarItem>
 
@@ -87,6 +99,13 @@ export default function MyNavbar() {
             Layout
           </Link>
           <Link
+            href="/bedroom-layout"
+            className="text-sm text-primary-400"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Bedroom
+          </Link>
+          <Link
             href="/about"
             className="text-sm text-primary-400"
             onClick={() => setIsMenuOpen(false)}
@@ -99,6 +118,13 @@ export default function MyNavbar() {
             onClick={() => setIsMenuOpen(false)}
           >
             Blog
+          </Link>
+          <Link
+            href="/fengshui-request"
+            className="text-sm text-primary-400"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Improve Our AI
           </Link>
         </NavbarMenuItem>
 

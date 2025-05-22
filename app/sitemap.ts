@@ -12,6 +12,7 @@ export default async function sitemap() {
     '/about',
     '/privacy-policy',
     '/terms-of-service',
+    '/fengshui-request',
     '/blog',
     '/blog/ai-fengshui-tools',
     '/blog/what-is-fengshui',

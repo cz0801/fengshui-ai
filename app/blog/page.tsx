@@ -1,8 +1,9 @@
 // app/blog/page.tsx
+import { generateMetadata } from "@/utils/metadata";
 import BlogCard from "./components/BlogCard";
 import BlogHero from "./components/BlogHero";
 
-export const metadata = {
+export const metadata = generateMetadata({
   title: 'Fengshui Knowledge | AI Feng Shui Blog & Tips',
   description:
     'Learn practical feng shui knowledge with AI-powered insights. Explore tips on floor plan layout, bagua maps, chi flow, and home energy optimization.',
@@ -18,34 +19,8 @@ export const metadata = {
     'room feng shui guide',
     'AI floor plan analysis',
   ],
-  alternates: {
-    canonical: 'https://www.aifengshui.app/blog',
-  },
-  openGraph: {
-    title: 'Fengshui Knowledge | AI Feng Shui Blog & Tips',
-    description:
-      'Discover essential feng shui concepts enhanced by AI. Learn how to improve your home’s energy, layout, and harmony with expert-backed guides.',
-    url: 'https://www.aifengshui.app/blog',
-    siteName: 'AI Feng Shui',
-    images: [
-      {
-        url: 'https://www.aifengshui.app/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Fengshui Knowledge Articles Overview',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Fengshui Knowledge | AI Feng Shui Blog',
-    description:
-      'AI-driven feng shui tips for better home and office design. Start learning feng shui layout principles today.',
-    images: ['https://www.aifengshui.app/images/og-image.jpg'],
-  },
-};
+  canonical: 'https://www.aifengshui.app/blog',
+});
 
 export default function BlogPage() {
   return (

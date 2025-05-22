@@ -32,7 +32,7 @@ export const metadata = {
     siteName: 'AI Feng Shui',
     images: [
       {
-        url: 'https://www.aifengshui.app/images/og-image.jpg', 
+        url: 'https://www.aifengshui.app/images/og-image.png', 
         width: 1200,
         height: 630,
         alt: 'AI Feng Shui About Page Preview',
@@ -46,7 +46,7 @@ export const metadata = {
     title: 'About | AI Feng Shui',
     description:
       'From architecture to AI: how we built a feng shui tool that brings ancient wisdom into modern homes.',
-    images: ['https://www.aifengshui.app/images/og-image.jpg'],
+    images: ['https://www.aifengshui.app/images/og-image.png'],
   },
 };
 

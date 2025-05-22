@@ -6,53 +6,15 @@ import WhyAIFengshuiSection from "@/components/landing/WhyAIFengshuiSection";
 import FaqSection from "@/components/landing/FaqSection";
 import LandingNavbar from "@/components/landing/LandingNavbar";
 import HomeSwitchFeature from "@/components/landing/HomeSwitchFeature";
+import { generateMetadata } from "@/utils/metadata";
 
 // app/page.tsx or app/head.tsx
-export const metadata = {
+export const metadata = generateMetadata({
   title: 'Free AI Feng Shui Generator | aifengshui.app',
   description:
-    'Upload your floor plan or room layout to get a free feng shui generator powered by AI. Discover energy flow, five-element balance, and personalized improvement suggestions instantly.',
-  keywords: [
-    'AI Feng Shui',
-    'feng shui floor plan',
-    'feng shui analysis',
-    'feng shui tool',
-    'feng shui online',
-    'bagua map analysis',
-    'chi energy layout',
-    'room layout feng shui',
-    'apartment feng shui',
-    'free feng shui report',
-    'AI home analysis',
-  ],
-  alternates: {
-    canonical: 'https://www.aifengshui.app/',
-  },
-  openGraph: {
-    title: 'Free AI Feng Shui Generator | aifengshui.app',
-    description:
-      'Get instant feng shui insights by uploading your room or floor plan image. AI-powered suggestions for layout, energy flow, and five-element harmony.',
-    url: 'https://www.aifengshui.app/',
-    siteName: 'AI Feng Shui',
-    images: [
-      {
-        url: 'https://www.aifengshui.app/images/og-image.jpg', // 你需要提供一个 1200x630 的社交分享图
-        width: 1200,
-        height: 630,
-        alt: 'AI Feng Shui Generator Screenshot',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Free AI Feng Shui Generator',
-    description:
-      'Use AI to analyze your home’s layout and receive feng shui insights in seconds. No feng shui master needed.',
-    images: ['https://www.aifengshui.app/images/og-image.jpg'],
-  },
-};
+    'Generate personalized Feng Shui analysis for your home with our free AI tool. Upload floor plans and optimize your space for better energy flow.',
+  canonical: 'https://www.aifengshui.app/',
+})
 
 export default function Home() {
   return (

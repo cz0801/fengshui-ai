@@ -1,70 +1,35 @@
 import BlogSidebar from '../../components/BlogSidebar';
 import BlogImage from '../../components/BlogImage';
 import Script from 'next/script';
+import { generateMetadata } from '@/utils/metadata';
+import { generateArticleJsonLd } from '@/utils/jsonId';
 
 const TITLE = 'What Is Feng Shui? | Meaning, Principles, and Modern Value';
-const DESCRIPTION = 'Discover the true meaning, core philosophy, and scientific relevance of this ancient Chinese system. Learn how Feng Shui connects nature, energy, and sustainable living in the modern world.';
+const DESCRIPTION = 'Discover the meaning, principles, and modern relevance of Feng Shui, an ancient Chinese environmental science guiding harmonious living.';
+const IMAGE_URL = 'https://www.aifengshui.app/blog/fengshui-evolution-ancient-to-modern.png';
 
-export const metadata = {
+export const metadata = generateMetadata({
   title: TITLE,
   description: DESCRIPTION,
-  alternates: {
-    canonical: 'https://www.aifengshui.app/blog/what-is-fengshui',
+  canonical: 'https://www.aifengshui.app/blog/what-is-fengshui',
+  image: {
+    url: IMAGE_URL,
+    width: 1200,
+    height: 630,
+    alt: 'What is Feng Shui?',
   },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: 'https://www.aifengshui.app/blog/what-is-fengshui',
-    siteName: 'AI Feng Shui',
-    images: [
-      {
-        url: 'https://www.aifengshui.app/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'What is Feng Shui?',
-      },
-    ],
-    locale: 'en_US',
-    type: 'article',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: TITLE,
-    description: DESCRIPTION,
-    images: ['https://www.aifengshui.app/images/og-image.jpg'],
-  },
-};
+});
 
 export default function WhatIsFengshuiPage() {
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
+  const jsonLd = generateArticleJsonLd({
     headline: TITLE,
     description: DESCRIPTION,
-    image: "https://www.aifengshui.app/blog/fengshui-evolution-ancient-to-modern.png",
-    author:{
-      "@type": "Organization",
-      name: "aifengshui.app",
-      url: "https://www.aifengshui.app",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "aifengshui.app",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.aifengshui.app/images/logo.png",
-        width: 270,
-        height: 120,
-      },
-    },
+    image: IMAGE_URL,
     datePublished: "2025-05-15T08:00:00+08:00",
     dateModified: "2025-05-15T08:00:00+08:00",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://www.aifengshui.app/blog/what-is-fengshui",
-    },
-  };
+    mainEntityId: "https://www.aifengshui.app/blog/what-is-fengshui",
+  });
 
   return (
     <>
