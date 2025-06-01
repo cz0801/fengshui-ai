@@ -28,6 +28,23 @@ export default function BlogPage() {
       <BlogHero />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <BlogCard
+          title="Bedroom Feng Shui Guide – Part 2 | Love, Sleep & Health Essentials"
+          slug="bedroom-fengshui-guide-part2"
+          date="May 26, 2025"
+          coverImage="/blog/bedroom-fengshui-guide-part2/fengshui-romance-corner.png"
+          excerpt="Discover Feng Shui tips for relationship harmony, better sleep, and healthy energy flow in your bedroom. Part 2 of our guide covers practical layouts, plant placement, lighting, and more."
+        />
+
+        <BlogCard
+          title="Bedroom Feng Shui Guide – Part 1 | Bed Placement, Mirror Taboos, and Color Tips"
+          slug="bedroom-fengshui-guide-part1"
+          date="May 20, 2025"
+          coverImage="/blog/bedroom-fengshui-guide-part1/bed-sees-door-window.png"
+          excerpt="Learn key Feng Shui tips for your bedroom: ideal bed placement, mirror and door taboos, and soothing color choices for better sleep and energy."
+        />
+
         <BlogCard
           title="The Ultimate Guide to Feng Shui Bedroom Layout | 14 Principles for a Healthy and Harmonious Space"
           slug="fengshui-bedroom"

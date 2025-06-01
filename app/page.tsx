@@ -7,6 +7,7 @@ import FaqSection from "@/components/landing/FaqSection";
 import LandingNavbar from "@/components/landing/LandingNavbar";
 import HomeSwitchFeature from "@/components/landing/HomeSwitchFeature";
 import { generateMetadata } from "@/utils/metadata";
+import PartnerSection from "@/components/landing/PartnerSection";
 
 // app/page.tsx or app/head.tsx
 export const metadata = generateMetadata({
@@ -32,6 +33,7 @@ export default function Home() {
       <UseCaseSection />
       <WhyAIFengshuiSection />
       <FaqSection />
+      <PartnerSection />
     </main>
   );
 }

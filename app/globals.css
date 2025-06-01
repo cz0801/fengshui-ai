@@ -66,3 +66,32 @@ body {
 .prose blockquote {
   @apply border-l-4 border-gray-300 pl-4 italic text-gray-600 dark:text-gray-400;
 }
+
+
+article {
+  @apply text-default-700 leading-relaxed text-base;
+}
+
+article h1 {
+  @apply text-3xl font-bold text-default-900 mb-6;
+}
+
+article h2 {
+  @apply text-xl font-semibold mt-10 mb-4 text-default-800 scroll-mt-20;
+}
+
+article h3 {
+  @apply text-lg font-semibold mt-6 mb-2 text-default-800;
+}
+
+article p {
+  @apply mb-4;
+}
+
+article ul {
+  @apply list-disc pl-6 mt-2 mb-6;
+}
+
+article a {
+  @apply text-primary hover:underline;
+}

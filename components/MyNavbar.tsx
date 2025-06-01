@@ -9,12 +9,18 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   NavbarMenuToggle,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Button
 } from "@heroui/react";
 import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon } from "./Icons";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
+import { ChevronDownIcon, LayoutIcon, BedroomIcon } from "./Icons";
 
 export default function MyNavbar() {
   const { theme, setTheme } = useTheme();
@@ -41,19 +47,41 @@ export default function MyNavbar() {
       {/* 右侧内容 */}
       <NavbarContent justify="end">
         {/* 使用说明链接 */}
-        <NavbarItem className="hidden md:flex pt-[1px] gap-4">
-          <Link
-            href="/"
-            className="text-sm hover:text-primary-500 transition-colors"
+        <Dropdown className="hidden md:flex pt-[1px]">
+          <NavbarItem className="hidden md:flex pt-[1px]">
+            <DropdownTrigger>
+              <Button
+                disableRipple
+                className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                endContent={<ChevronDownIcon />}
+                radius="sm"
+                variant="light"
+              >
+                Tools
+              </Button>
+            </DropdownTrigger>
+          </NavbarItem>
+          <DropdownMenu
+            aria-label="Fengshui Tools"
+            itemClasses={{ base: "gap-4" }}
           >
-            Layout
-          </Link>
-          <Link 
-            href="/bedroom-layout" 
-            className="text-sm hover:text-primary-500 transition-colors"
-          >
-            Bedroom
-          </Link>
+            <DropdownItem
+              key="layout"
+              description="Optimize your floor layout for energy flow"
+              startContent={<LayoutIcon className="text-primary-400"/>}
+            >
+              <Link href="/">Floor Layout Fengshui</Link>
+            </DropdownItem>
+            <DropdownItem
+              key="bedroom"
+              description="Fengshui insights for better sleep and harmony"
+              startContent={<BedroomIcon className="text-primary-400"/>}
+            >
+              <Link href="/bedroom-layout">Bedroom Fengshui</Link>
+            </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
+        <NavbarItem className="hidden md:flex pt-[1px] gap-6">
           <Link
             href="/about"
             className="text-sm hover:text-primary-500 transition-colors"
@@ -90,38 +118,38 @@ export default function MyNavbar() {
 
       {/* 移动端展开菜单内容 */}
       <NavbarMenu className="pt-10">
-        <NavbarMenuItem className="flex flex-col gap-2">
+        <NavbarMenuItem className="flex flex-col gap-4">
           <Link
             href="/"
-            className="text-sm text-primary-400"
+            className="text-sm text-primary-500"
             onClick={() => setIsMenuOpen(false)}
           >
-            Layout
+            Floor Layout Fengshui
           </Link>
           <Link
             href="/bedroom-layout"
-            className="text-sm text-primary-400"
+            className="text-sm text-primary-500"
             onClick={() => setIsMenuOpen(false)}
           >
-            Bedroom
+            Bedroom Fengshui
           </Link>
           <Link
             href="/about"
-            className="text-sm text-primary-400"
+            className="text-sm text-primary-500"
             onClick={() => setIsMenuOpen(false)}
           >
             About Us
           </Link>
           <Link
             href="/blog"
-            className="text-sm text-primary-400"
+            className="text-sm text-primary-500"
             onClick={() => setIsMenuOpen(false)}
           >
             Blog
           </Link>
           <Link
             href="/fengshui-request"
-            className="text-sm text-primary-400"
+            className="text-sm text-primary-500"
             onClick={() => setIsMenuOpen(false)}
           >
             Improve Our AI

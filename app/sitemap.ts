@@ -17,6 +17,8 @@ export default async function sitemap() {
     '/blog/ai-fengshui-tools',
     '/blog/what-is-fengshui',
     '/blog/fengshui-bedroom',
+    '/blog/bedroom-fengshui-guide-part1',
+    '/blog/bedroom-fengshui-guide-part2',
     // 👉 可以继续添加更多静态页面
   ];
 
