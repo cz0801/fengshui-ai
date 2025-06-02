@@ -13,6 +13,8 @@ export default async function sitemap() {
     '/privacy-policy',
     '/terms-of-service',
     '/fengshui-request',
+    '/fengshui-bedroom-example',
+    '/room-planner',
     '/blog',
     '/blog/ai-fengshui-tools',
     '/blog/what-is-fengshui',

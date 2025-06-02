@@ -16,7 +16,7 @@ import {
   Button
 } from "@heroui/react";
 import { useTheme } from "next-themes";
-import { MoonIcon, SunIcon } from "./Icons";
+import { DesignIcon, MoonIcon, SunIcon } from "./Icons";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
@@ -29,6 +29,7 @@ export default function MyNavbar() {
 
   return (
     <Navbar
+      isBlurred={false}
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       className="pt-4"
@@ -79,9 +80,22 @@ export default function MyNavbar() {
             >
               <Link href="/bedroom-layout">Bedroom Fengshui</Link>
             </DropdownItem>
+            <DropdownItem
+              key="design"
+              description="Create and export room layouts for feng shui analysis"
+              startContent={<DesignIcon className="text-primary-400"/>}
+            >
+              <Link href="/room-planner">Room & Layout planner</Link>
+            </DropdownItem>
           </DropdownMenu>
         </Dropdown>
         <NavbarItem className="hidden md:flex pt-[1px] gap-6">
+          <Link
+            href="/fengshui-bedroom-example"
+            className="text-sm hover:text-primary-500 transition-colors"
+          >
+            Examples
+          </Link>
           <Link
             href="/about"
             className="text-sm hover:text-primary-500 transition-colors"
@@ -132,6 +146,20 @@ export default function MyNavbar() {
             onClick={() => setIsMenuOpen(false)}
           >
             Bedroom Fengshui
+          </Link>
+          <Link
+            href="/room-planner"
+            className="text-sm text-primary-500"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Room & Layout planner
+          </Link>
+          <Link
+            href="/fengshui-bedroom-example"
+            className="text-sm text-primary-500"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Examples
           </Link>
           <Link
             href="/about"
