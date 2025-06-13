@@ -390,8 +390,10 @@ export default function FengshuiBedroomPage() {
       {/* Sidebar */}
       <BlogSidebar
         about= {DESCRIPTION}
-        featuredTitle="What is Fengshui?"
-        featuredSlug="what-is-fengshui"
+        featured={[
+          { title: "What is Fengshui?", slug: "what-is-fengshui" },
+          { title: "Feng Shui Colors for Bedroom", slug: "feng-shui-bedroom-colors" },
+        ]}
         anchors={[
           { label: '1. Choose Choose a Square or Rectangular Bedroom Shape', href: '#choose-a-square-or-rectangular-bedroom-shape' },
           { label: '2. Maintain Brightness During the Day and Dimness at Night', href: '#maintain-brightness-and-dimness' },

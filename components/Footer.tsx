@@ -13,7 +13,7 @@ export default function Footer() {
             Floor Layout Fengshui
           </Link>
           <Link
-            href="/fengshui-bedroom"
+            href="/bedroom-layout"
             className="hover:underline text-primary"
           >
             Bedroom Fengshui

@@ -65,27 +65,23 @@ export default function MyNavbar() {
           <DropdownMenu
             aria-label="Fengshui Tools"
             itemClasses={{ base: "gap-4" }}
+            onAction={(key) => {
+              // 关闭菜单
+              setIsMenuOpen(false);
+              // 跳转页面
+              if (key === "layout") router.push("/");
+              if (key === "bedroom") router.push("/bedroom-layout");
+              if (key === "design") router.push("/room-planner");
+            }}
           >
-            <DropdownItem
-              key="layout"
-              description="Optimize your floor layout for energy flow"
-              startContent={<LayoutIcon className="text-primary-400"/>}
-            >
-              <Link href="/">Floor Layout Fengshui</Link>
+            <DropdownItem key="layout" description="Optimize your floor layout for energy flow" startContent={<LayoutIcon className="text-primary-400"/>}>
+              Floor Layout Fengshui
             </DropdownItem>
-            <DropdownItem
-              key="bedroom"
-              description="Fengshui insights for better sleep and harmony"
-              startContent={<BedroomIcon className="text-primary-400"/>}
-            >
-              <Link href="/bedroom-layout">Bedroom Fengshui</Link>
+            <DropdownItem key="bedroom" description="Fengshui insights for better sleep and harmony" startContent={<BedroomIcon className="text-primary-400"/>}>
+              Bedroom Fengshui
             </DropdownItem>
-            <DropdownItem
-              key="design"
-              description="Create and export room layouts for feng shui analysis"
-              startContent={<DesignIcon className="text-primary-400"/>}
-            >
-              <Link href="/room-planner">Room & Layout planner</Link>
+            <DropdownItem key="design" description="Create and export room layouts for feng shui analysis" startContent={<DesignIcon className="text-primary-400"/>}>
+              Room & Layout planner
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>

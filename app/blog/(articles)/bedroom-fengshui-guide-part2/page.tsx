@@ -280,8 +280,9 @@ export default function BedroomFengShuiGuidePart1() {
       {/* Sidebar */}
       <BlogSidebar
         about= {DESCRIPTION}
-        featuredTitle="Can AI Really Help with Feng Shui?"
-        featuredSlug="ai-fengshui-tools"
+        featured={[
+          { title: "Can AI Really Help with Feng Shui?", slug: "ai-fengshui-tools" }
+        ]}
         anchors={[
           { label: 'Feng Shui for Relationship Harmony, Better Sleep, and Health', href: '#feng-shui-for-relationship-harmony-better-sleep-and-health' },
           { label: 'Other Common Bedroom Feng Shui Rules and Taboos', href: '#other-common-bedroom-feng-shui-rules-and-taboos' },

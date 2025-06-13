@@ -13,8 +13,20 @@ Our vision is to help more people benefit from Feng Shui regardless of their cul
 ### [AI Feng Shui Generator](https://www.aifengshui.app)
 This is the core feature of the site. Users can upload an image of their home layout—such as a hand-drawn sketch or digital blueprint—and the AI will analyze it based on energy flow, entry placement, and elemental distribution. Suggestions include how to reposition the bed, where to enhance wealth corners, or how to balance fire and water elements. Results are displayed instantly and are beginner-friendly.
 
+### [AI Bedroom Feng Shui Analysis](https://www.aifengshui.app/bedroom-layout)
+Focused specifically on the bedroom, this tool allows users to upload or design their bedroom layout and receive tailored Feng Shui recommendations. The AI evaluates the placement of beds, doors, mirrors, and other key features, offering suggestions that improve rest, health, and harmony.
+
+### [Room Planner Tool](https://www.aifengshui.app/room-planner)
+An interactive tool that lets users draw their bedroom or room layout from scratch. It supports drag-and-drop elements and helps visualize furniture placement before running a Feng Shui analysis. Perfect for those without a pre-existing floor plan.
+
 ### [Feng Shui Blog & Guides](https://www.aifengshui.app/blog/ai-fengshui-tools)
 Our blog explains key Feng Shui concepts through illustrated, example-based articles. Topics include bedroom Feng Shui, kitchen layout mistakes, and how to use Bagua maps. All articles are written in plain English, enhanced with AI-generated visuals and practical advice, helping users not only understand but apply Feng Shui in real life.
+
+### [Feng Shui Bedroom Examples](https://www.aifengshui.app/fengshui-bedroom-example)
+A curated collection of bedroom layout case studies, complete with diagrams and explanations. These examples show how classical Feng Shui principles are applied in real-world layouts, offering inspiration and best practices for users.
+
+### [What Is Feng Shui?](https://www.aifengshui.app/blog/what-is-fengshui)
+An introductory article explaining the foundation of Feng Shui: the Five Elements, directional energy, yin-yang theory, and the Bagua map. Ideal for beginners seeking to understand how ancient principles translate into modern design.
 
 ## User Value
 
@@ -30,10 +42,14 @@ The platform is ideal for new homeowners, renters, interior designers, and anyon
 
 ## Recent Updates
 
+### [Feng Shui Bedroom Layout Guide | AI Feng Shui Generator](https://www.aifengshui.app/blog/fengshui-bedroom-layout-guide)
+Feng Shui bedroom layout guide to improve sleep and harmony. Published in June 2025, this comprehensive guide features 14 essential layout principles, real 3D visual examples, and common mistakes to avoid. It also introduces AI evaluation techniques for bedrooms.
+
 ### [Bedroom Feng Shui Guide – Part 1](https://www.aifengshui.app/blog/bedroom-fengshui-guide-part1)
 Covers essential Feng Shui principles for bedroom layout, including bed placement, mirror and door taboos, and ideal calming color choices. This illustrated guide helps beginners avoid common mistakes and create a restful, balanced sleeping environment. Updated in May 2025 with clear examples and visuals.
 
 ### [Bedroom Feng Shui Guide – Part 2](https://www.aifengshui.app/blog/bedroom-fengshui-guide-part2)
 Continues the Feng Shui bedroom series with advanced tips on boosting relationship harmony, improving sleep, and maintaining health through proper layout, lighting, and decor. Also includes common bedroom Feng Shui taboos to avoid. Published in May 2025 as a companion to Part 1.
 
-- [Bedroom Layout Tool](https://www.aifengshui.app/bedroom-layout): Launched May 2025 — new page focused on uploading bedroom layouts and receiving personalized Feng Shui reports.
+### [Bedroom Layout Tool](https://www.aifengshui.app/bedroom-layout)
+Launched in May 2025 — this new tool allows users to upload their bedroom layout and receive AI-generated Feng Shui reports. It focuses on practical layout fixes and visual recommendations based on traditional principles.

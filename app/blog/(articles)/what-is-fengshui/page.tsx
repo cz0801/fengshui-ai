@@ -422,8 +422,9 @@ export default function WhatIsFengshuiPage() {
       {/* Sidebar */}
       <BlogSidebar
         about= {DESCRIPTION}
-        featuredTitle="Can AI Really Help with Feng Shui?"
-        featuredSlug="ai-fengshui-tools"
+        featured={[
+          { title: "Can AI Really Help with Feng Shui?", slug: "ai-fengshui-tools" }
+        ]}
         anchors={[
           { label: 'A Historical Overview of Feng Shui', href: '#historical-overview-of-feng-shui' },
           { label: 'The Core Philosophy of Feng Shui', href: '#core-philosophy-of-feng-shui' },

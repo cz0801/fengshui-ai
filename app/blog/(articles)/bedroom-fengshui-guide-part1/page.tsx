@@ -291,8 +291,9 @@ export default function BedroomFengShuiGuidePart1() {
       {/* Sidebar */}
       <BlogSidebar
         about= {DESCRIPTION}
-        featuredTitle="Can AI Really Help with Feng Shui?"
-        featuredSlug="ai-fengshui-tools"
+        featured={[
+          { title: "Can AI Really Help with Feng Shui?", slug: "ai-fengshui-tools" }
+        ]}
         anchors={[
           { label: 'Bed Placement Principles in Feng Shui', href: '#bed-placement-principles-in-feng-shui' },
           { label: 'Mirror, Door, and Window Taboos in Bedroom Feng Shui', href: '#mirror-door-and-window-taboos-in-bedroom-feng-shui' },

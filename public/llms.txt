@@ -1,30 +1,20 @@
 # aifengshui.app
 
-> aifengshui.app is an AI-powered platform that helps users analyze their home or room layout using Feng Shui principles. By uploading a floor plan, users can get personalized suggestions based on Five Element theory, Qi flow, and classical Feng Shui logic.
-
-Combining ancient metaphysics with modern machine intelligence, this tool enables anyone to perform Feng Shui evaluations without hiring a consultant.
+> aifengshui.app is an AI-powered Feng Shui analysis platform that helps users evaluate their home, bedroom, or room layout using classical Feng Shui principles combined with modern AI tools. By uploading a floor plan or using the room planner, users receive personalized suggestions based on Five Element theory, Qi flow, and more.
 
 ## Core Offerings
-- [AI Feng Shui Generator](https://www.aifengshui.app): Upload your floor or room layout to receive instant, free Feng Shui analysis powered by AI.
-- [Blog: AI Feng Shui Tools](https://www.aifengshui.app/blog/ai-fengshui-tools): Introduces available features, tools, and how the AI makes Feng Shui evaluations.
-- [Feng Shui Bedroom Guide](https://www.aifengshui.app/blog/fengshui-bedroom): A comprehensive guide featuring 14 essential layout principles for a healthy and prosperous bedroom. Illustrated with real 3D images.
+- [AI Feng Shui Generator](https://www.aifengshui.app): Upload your floor or room layout to get instant AI Feng Shui analysis based on your home's structure and orientation.
+- [AI Bedroom Feng Shui Analysis](https://www.aifengshui.app/bedroom-layout): Upload your bedroom layout and receive detailed analysis and recommendations powered by AI and classical Feng Shui logic.
+- [Room Planner Tool](https://www.aifengshui.app/room-planner): Draw and customize your bedroom layout interactively, then receive an AI Feng Shui assessment.
 
 ## Key Resources
-- [What Is Feng Shui?](https://www.aifengshui.app/blog/what-is-fengshui): Educational article explaining the fundamentals of Feng Shui, the Five Elements, and directional energy.
-
-### [Bedroom Feng Shui Guide – Part 1](https://www.aifengshui.app/blog/bedroom-fengshui-guide-part1)
-Covers essential Feng Shui principles for bedroom layout, including bed placement, mirror and door taboos, and ideal calming color choices. This illustrated guide helps beginners avoid common mistakes and create a restful, balanced sleeping environment. Updated in May 2025 with clear examples and visuals.
-
-### [Bedroom Feng Shui Guide – Part 2](https://www.aifengshui.app/blog/bedroom-fengshui-guide-part2)
-Continues the Feng Shui bedroom series with advanced tips on boosting relationship harmony, improving sleep, and maintaining health through proper layout, lighting, and decor. Also includes common bedroom Feng Shui taboos to avoid. Published in May 2025 as a companion to Part 1.
-
-- [Feng Shui Bedroom Guide](https://www.aifengshui.app/blog/fengshui-bedroom): Updated May 2025 — includes 14 essential bedroom layout principles, 3D visual examples, and AI evaluation cases.
-
-- [About](https://www.aifengshui.app/about): Platform introduction, service scope, and vision.
-
-- [Bedroom Layout Tool](https://www.aifengshui.app/bedroom-layout): Launched May 2025 — new page focused on uploading bedroom layouts and receiving personalized Feng Shui reports.
+- [Feng Shui Bedroom Example Cases](https://www.aifengshui.app/fengshui-bedroom-example): A library of real bedroom layout cases with illustrated Feng Shui evaluations.
+- [What Is Feng Shui?](https://www.aifengshui.app/blog/what-is-fengshui): An introductory article explaining core Feng Shui principles, the Five Elements, and directional energy patterns.
+- [Feng Shui Bedroom Guide](https://www.aifengshui.app/blog/fengshui-bedroom): A comprehensive overview featuring 14 essential Feng Shui principles for bedroom harmony, with 3D visuals and AI case examples.
 
 ## Recent Updates
+### [Feng Shui Bedroom Layout Guide | AI Feng Shui Generator](https://www.aifengshui.app/blog/fengshui-bedroom-layout-guide)
+Feng Shui bedroom layout guide to improve sleep and harmony. Try our AI planner at aifengshui.app. This new guide published in June 2025 includes illustrated layout principles, common mistakes to avoid, and modern bedroom Feng Shui case studies powered by AI.
 
 ### [Bedroom Feng Shui Guide – Part 1](https://www.aifengshui.app/blog/bedroom-fengshui-guide-part1)
 Covers essential Feng Shui principles for bedroom layout, including bed placement, mirror and door taboos, and ideal calming color choices. This illustrated guide helps beginners avoid common mistakes and create a restful, balanced sleeping environment. Updated in May 2025 with clear examples and visuals.

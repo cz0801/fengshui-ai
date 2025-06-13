@@ -248,8 +248,9 @@ export default function AIFengshuiToolsPage() {
       {/* Sidebar */}
       <BlogSidebar
         about= {DESCRIPTION}
-        featuredTitle="What is Fengshui?"
-        featuredSlug="what-is-fengshui"
+        featured={[
+          { title: "What is Fengshui?", slug: "what-is-fengshui" },
+        ]}
         anchors={[
           { label: 'Can AI Understand Feng Shui?', href: '#can-ai-understand-feng-shui' },
           { label: 'Top AI Feng Shui Tools to Try', href: '#top-ai-feng-shui-tools-to-try' },

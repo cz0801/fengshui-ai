@@ -28,7 +28,15 @@ export default function BlogPage() {
       <BlogHero />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        
+
+        <BlogCard
+          title="Feng Shui Bedroom Layout Guide | AI Feng Shui Generator"
+          slug="fengshui-bedroom-layout-guide"
+          date="June 13, 2025"
+          coverImage="/blog/fengshui-bedroom-layout-guide/fengshui-bedroom-overview.png"
+          excerpt="Feng Shui bedroom layout guide to improve sleep and harmony. Try our AI planner at aifengshui.app."
+        />
+
         <BlogCard
           title="Bedroom Feng Shui Guide – Part 2 | Love, Sleep & Health Essentials"
           slug="bedroom-fengshui-guide-part2"

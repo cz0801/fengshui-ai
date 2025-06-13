@@ -7,15 +7,18 @@ interface AnchorItem {
   href: string;
 }
 
+interface FeaturedArticle {
+  title: string;
+  slug: string;
+}
+
 export default function BlogSidebar({
   about,
-  featuredTitle,
-  featuredSlug,
+  featured,
   anchors,
 }: {
   about: string;
-  featuredTitle: string;
-  featuredSlug: string;
+  featured: FeaturedArticle[];
   anchors: AnchorItem[];
 }) {
   return (
@@ -40,16 +43,22 @@ export default function BlogSidebar({
         </div>
       )}
 
-      {/* Featured Article */}
-      {featuredTitle && featuredSlug && (
+      {/* Featured Articles */}
+      {featured.length > 0 && (
         <div>
           <h2 className="font-semibold text-lg mb-2">Featured</h2>
-          <Link
-            href={`/blog/${featuredSlug}`}
-            className="text-primary hover:underline"
-          >
-            {featuredTitle}
-          </Link>
+          <ul className="space-y-1">
+            {featured.map((item) => (
+              <li key={item.slug}>
+                <Link
+                  href={`/blog/${item.slug}`}
+                  className="text-primary hover:underline"
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 

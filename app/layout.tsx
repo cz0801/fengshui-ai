@@ -5,6 +5,7 @@ import MyNavbar from "@/components/MyNavbar";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from 'next/script';
 
 // 获取 Google Analytics ID
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || '';
@@ -33,6 +34,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* ✅ 插入 Google AdSense 脚本 */}
+        <Script
+          id="adsense-script"
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5943172736337554"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={`${Merriweather.variable} antialiased`}>
         <ThemeProvider>
           <MyNavbar />
