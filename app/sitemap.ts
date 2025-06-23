@@ -22,6 +22,7 @@ export default async function sitemap() {
     '/blog/bedroom-fengshui-guide-part1',
     '/blog/bedroom-fengshui-guide-part2',
     '/blog/fengshui-bedroom-layout-guide',
+    '/blog/fengshui-essentials',
     // 👉 可以继续添加更多静态页面
   ];
 

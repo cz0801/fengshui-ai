@@ -43,6 +43,7 @@ export default function FengshuiBedroomLayoutGuide() {
     <div className="max-w-screen-lg mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[1fr_250px] gap-12">
       <article>
         <h1>Feng Shui Bedroom Layout Guide</h1>
+        <p className='text-sm text-default-400'> June 13, 2025</p>
         <p>Feng Shui, the ancient Chinese art of harmonizing your environment, places great emphasis on the bedroom. As the space where we spend roughly one-third of our lives, the bedroom should be a sanctuary for rest, romance, and rejuvenation. A well-designed <strong>feng shui bedroom layout</strong> can promote positive energy flow (chi), better sleep, and a more balanced life. In this guide, we’ll explore practical tips and principles for arranging your bedroom according to Feng Shui, blending time-honored wisdom with modern sensibilities.</p>
 
         <BlogImage

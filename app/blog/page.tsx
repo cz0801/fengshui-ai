@@ -30,6 +30,14 @@ export default function BlogPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
         <BlogCard
+          title="Transform Your Bedroom with These Feng Shui Essentials"
+          slug="fengshui-essentials"
+          date="June 23, 2025"
+          coverImage="/blog/fengshui-essentials/fengshui-crystals.png"
+          excerpt="Discover Feng Shui bedroom essentials, including crystals and plants, to enhance energy flow and create a harmonious space."
+        />
+
+        <BlogCard
           title="Feng Shui Bedroom Layout Guide | AI Feng Shui Generator"
           slug="fengshui-bedroom-layout-guide"
           date="June 13, 2025"
