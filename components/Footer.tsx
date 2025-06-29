@@ -7,7 +7,7 @@ export default function Footer() {
         {/* 左侧版权信息 */}
         <div className="flex flex-col gap-1">
           <Link
-            href="/"
+            href="/layout"
             className="hover:underline text-primary"
           >
             Floor Layout Fengshui

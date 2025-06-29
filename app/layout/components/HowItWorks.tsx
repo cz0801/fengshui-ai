@@ -1,4 +1,3 @@
-// components/landing/HowItWorks.tsx
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,15 +12,14 @@ export default function HowItWorksSection() {
 
         {/* Step 1 */}
         <div className="flex flex-col md:flex-row items-start gap-8">
-          {/* Text */}
           <div className="flex-1 space-y-4">
             <div className="text-3xl">📤</div>
-            <h3 className="text-xl font-semibold">1. Upload Your Image</h3>
+            <h3 className="text-xl font-semibold">1. Upload Your Floor Plan</h3>
             <p className="text-default-600 text-base">
-              Upload a clear <strong>floor plan</strong> or <strong>room layout drawing</strong> to receive personalized <strong>feng shui analysis</strong> powered by AI. Your image should include the <strong>north direction</strong> and clearly marked furniture or room functions to help the system generate accurate suggestions.
+              Upload your <strong>complete home floor plan</strong> — whether it&apos;s a photo, screenshot, or digital drawing. The layout should show all major rooms (entrance, kitchen, living room, bedrooms, etc.), walls, and furniture placements. Including the <strong>north direction</strong> ensures more accurate feng shui results.
             </p>
             <p className="text-default-600 text-base">
-              <strong>Don&apos;t have a floor plan yet?</strong>{' '}
+              <strong>Don&apos;t have a floor plan yet?</strong>{" "}
               Use our{" "}
               <Link
                 href="/room-planner"
@@ -29,14 +27,13 @@ export default function HowItWorksSection() {
               >
                 Room Planner
               </Link>{" "}
-              to draw your bedroom layout and export it for feng shui analysis.
+              to draw your layout and export it for feng shui analysis.
             </p>
           </div>
-          {/* Image */}
           <div className="flex-1">
             <Image
-              src="/images/how-to-1.png"
-              alt="Upload Floor Plan for Feng Shui Analysis"
+              src="/images/layout-how-to-1.png"
+              alt="Upload Floor Plan for Feng Shui Layout Analysis"
               width={800}
               height={426}
               className="w-full"
@@ -46,19 +43,17 @@ export default function HowItWorksSection() {
 
         {/* Step 2 */}
         <div className="flex flex-col md:flex-row-reverse items-start gap-8">
-          {/* Text */}
           <div className="flex-1 space-y-4">
             <div className="text-3xl">🧭</div>
-            <h3 className="text-xl font-semibold">2. Add Basic Info</h3>
+            <h3 className="text-xl font-semibold">2. Add Orientation & Property Info</h3>
             <p className="text-default-600 text-base">
-              Tell us whether the <strong>top of the layout</strong> points North, your <strong>building type</strong> (e.g., apartment or house), and the <strong>floor level</strong>. This helps the AI engine understand spatial orientation and generate better <strong>feng shui recommendations</strong> based on <strong>energy flow</strong> and <strong>five-element balance</strong>.
+              Tell us whether the <strong>top of your floor plan</strong> points North, your <strong>building type</strong> (e.g., apartment or house), and your <strong>floor level</strong>. These details help the AI engine evaluate your layout using feng shui logic based on <strong>spatial orientation</strong> and <strong>energy dynamics</strong>.
             </p>
           </div>
-          {/* Image */}
           <div className="flex-1">
             <Image
-              src="/images/how-to-2.png"
-              alt="Add Direction and Building Info for Feng Shui Analysis"
+              src="/images/layout-how-to-2.png"
+              alt="Set Direction and Property Info for Feng Shui Evaluation"
               width={800}
               height={426}
               className="w-full rounded-lg shadow-md"
@@ -68,19 +63,17 @@ export default function HowItWorksSection() {
 
         {/* Step 3 */}
         <div className="flex flex-col md:flex-row items-start gap-8">
-          {/* Text */}
           <div className="flex-1 space-y-4">
             <div className="text-3xl">🔮</div>
-            <h3 className="text-xl font-semibold">3. Get Feng Shui Insights</h3>
+            <h3 className="text-xl font-semibold">3. Get Personalized Feng Shui Insights</h3>
             <p className="text-default-600 text-base">
-              Our <strong>AI Feng Shui Generator</strong> will analyze your layout to assess <strong>chi flow</strong>, <strong>five-element alignment</strong>, and <strong>bagua zones</strong>. Instantly receive tailored recommendations to improve your room’s <strong>feng shui</strong> and boost harmony, health, and clarity.
+              Our <strong>AI Feng Shui Generator</strong> analyzes your <strong>full layout</strong> to assess <strong>chi flow</strong>, <strong>five-element alignment</strong>, and <strong>bagua zones</strong>. You&apos;ll get <strong>actionable feng shui recommendations</strong> to enhance harmony, energy flow, and wellbeing throughout your entire home.
             </p>
           </div>
-          {/* Image */}
           <div className="flex-1">
             <Image
-              src="/images/how-to-3.png"
-              alt="AI Feng Shui Analysis Report"
+              src="/images/layout-how-to-3.png"
+              alt="AI Feng Shui Report with Personalized Layout Suggestions"
               width={800}
               height={426}
               className="w-full rounded-lg shadow-md"

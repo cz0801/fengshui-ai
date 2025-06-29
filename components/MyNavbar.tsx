@@ -69,7 +69,7 @@ export default function MyNavbar() {
               // 关闭菜单
               setIsMenuOpen(false);
               // 跳转页面
-              if (key === "layout") router.push("/");
+              if (key === "layout") router.push("/layout");
               if (key === "bedroom") router.push("/bedroom-layout");
               if (key === "design") router.push("/room-planner");
             }}
@@ -130,7 +130,7 @@ export default function MyNavbar() {
       <NavbarMenu className="pt-10">
         <NavbarMenuItem className="flex flex-col gap-4">
           <Link
-            href="/"
+            href="/layout"
             className="text-sm text-primary-500"
             onClick={() => setIsMenuOpen(false)}
           >

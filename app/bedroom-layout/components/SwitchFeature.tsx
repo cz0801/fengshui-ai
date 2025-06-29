@@ -8,7 +8,7 @@ export default function SwitchFeature() {
       </p>
       <p className="text-sm text-default-600">
         🏠 Want to analyze your entire apartment layout — including kitchen, living room, and entrance?{' '} <br/>
-        <Link href="/" className="text-primary underline hover:text-primary-700 transition">
+        <Link href="/layout" className="text-primary underline hover:text-primary-700 transition">
           Click here for whole home Feng Shui analysis
         </Link>
         .

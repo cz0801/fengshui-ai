@@ -8,6 +8,7 @@ import BedroomUseCaseSection from "./components/BedroomUseCaseSection";
 import SwitchFeature from "./components/SwitchFeature";
 import WhyBedroomFengshuiSection from "./components/WhyBedroomFengshuiSection";
 import { generateMetadata } from "@/utils/metadata";
+import InlineAd from "@/components/InlineAd";
 
 export const metadata = generateMetadata({
   title: 'Bedroom Feng Shui Layout Analyzer | AI Feng Shui Tool',
@@ -37,6 +38,7 @@ export default function BedroomLayout() {
           Get Your Bedroom <span className="text-primary">Feng Shui</span> Report
         </h2>
         <BedroomLayoutClient />
+        <InlineAd slotId="5199761258" />
       </section>
       <BedroomHowItWorksSection />
       <BedroomUseCaseSection />

@@ -36,7 +36,7 @@ export async function POST(req: Request) {
   // console.log('userPrompt', userPrompt);
 
   const result = await generateText({
-    model: openai('gpt-4o-all'),
+    model: openai('gpt-4o'),
     system: bedroomFengshuiAnalysisPrompt,
     maxSteps: 5,
     messages: [
